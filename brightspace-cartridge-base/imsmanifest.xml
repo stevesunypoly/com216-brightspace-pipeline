@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="D2L_2939842" xmlns:d2l_2p0="http://desire2learn.com/xsd/d2lcp_v2p0" xmlns:scorm_1p2="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1">
+    <metadata>
+        <imsmd:lom>
+            <imsmd:general>
+                <imsmd:title>
+                    <imsmd:langstring xml:lang="en-us">26FA DIGITAL MEDIA/INFO IN SOCIETY COM216-01- 1594</imsmd:langstring>
+                </imsmd:title>
+                <imsmd:keyword>
+                    <imsmd:langstring xml:lang="en-us">2026FA-UTI-COM216-1594</imsmd:langstring>
+                </imsmd:keyword>
+                <imsmd:language>en-us</imsmd:language>
+            </imsmd:general>
+        </imsmd:lom>
+    </metadata>
+    <organizations default="d2l_orgs">
+        <organization identifier="d2l_org">
+            <item identifier="65602770" identifierref="RES_CONTENT_65602770" d2l_2p0:id="1" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37447710" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                <title>Welcome</title>
+                <item identifier="65602829" identifierref="RES_CONTENT_65602829" d2l_2p0:id="2" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395497" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>For Thursday, Sep 3: About AI</title>
+                </item>
+                <item identifier="65602772" identifierref="RES_CONTENT_65602772" d2l_2p0:id="3" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395412" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Your Workbench, and This One</title>
+                </item>
+                <item identifier="65602773" identifierref="RES_CONTENT_65602773" d2l_2p0:id="4" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395391" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>The Prominent Role of AI in This Course</title>
+                </item>
+                <item identifier="65602774" identifierref="RES_CONTENT_65602774" d2l_2p0:id="5" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395392" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>This Is an Open Course</title>
+                </item>
+                <item identifier="65602775" identifierref="RES_CONTENT_65602775" d2l_2p0:id="6" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395411" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Toolkit</title>
+                </item>
+            </item>
+            <item identifier="65602776" identifierref="RES_CONTENT_65602776" d2l_2p0:id="7" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37447711" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                <title>Toolkit</title>
+                <item identifier="65602777" identifierref="RES_CONTENT_65602777" d2l_2p0:id="8" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395397" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Chrome</title>
+                </item>
+                <item identifier="65602778" identifierref="RES_CONTENT_65602778" d2l_2p0:id="9" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395395" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Claude Desktop</title>
+                </item>
+                <item identifier="65602779" identifierref="RES_CONTENT_65602779" d2l_2p0:id="10" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395394" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Claude Account &amp; Acceptable Use Policy</title>
+                </item>
+                <item identifier="65602780" identifierref="RES_CONTENT_65602780" d2l_2p0:id="11" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395414" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>SUNY Poly Appropriate Use of Information Technology</title>
+                </item>
+                <item identifier="65602781" identifierref="RES_CONTENT_65602781" d2l_2p0:id="12" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395393" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Workbench Sharing Policy</title>
+                </item>
+                <item identifier="65602782" identifierref="RES_CONTENT_65602782" d2l_2p0:id="13" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395396" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Workbench</title>
+                </item>
+                <item identifier="65602783" identifierref="RES_CONTENT_65602783" d2l_2p0:id="14" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395401" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Class Workbench</title>
+                </item>
+                <item identifier="65602784" identifierref="RES_CONTENT_65602784" d2l_2p0:id="15" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395400" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Browser Extension: Exporter</title>
+                </item>
+                <item identifier="65602785" identifierref="RES_CONTENT_65602785" d2l_2p0:id="16" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395399" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Zotero</title>
+                </item>
+                <item identifier="65602786" identifierref="RES_CONTENT_65602786" d2l_2p0:id="17" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37395398" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>Microsoft Teams</title>
+                </item>
+                <item identifier="65733078" identifierref="RES_CONTENT_65733078" d2l_2p0:id="18" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37489295" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>exporter</title>
+                </item>
+                <item identifier="65733783" identifierref="RES_CONTENT_65733783" d2l_2p0:id="19" d2l_2p0:resource_code="EA3A8341-CCC6-4845-BAB9-C661ECF2C83F-37489799" description="" completion_type="2" d2l_2p0:ai_human_origin="0">
+                    <title>teams</title>
+                </item>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="3018e261-76fa-4a06-a98c-b778710048ad" type="webcontent" d2l_2p0:material_type="orgunitconfig" d2l_2p0:link_target="" href="orgunitconfig\orgunitconfig.xml" title="" />
+        <resource identifier="RES_CONTENT_65602770" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_65602829" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="For Thursday, Sep 3 About AI.html" title="" />
+        <resource identifier="RES_CONTENT_65602772" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Welcome-Workbench-Intro.html" title="" />
+        <resource identifier="RES_CONTENT_65602773" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Welcome-AI-in-This-Course.html" title="" />
+        <resource identifier="RES_CONTENT_65602774" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Welcome-Open-Course.html" title="" />
+        <resource identifier="RES_CONTENT_65602775" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Welcome-Toolkit-Overview.html" title="" />
+        <resource identifier="RES_CONTENT_65602776" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_65602777" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Toolkit-Chrome.html" title="" />
+        <resource identifier="RES_CONTENT_65602778" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Toolkit-Claude-Desktop.html" title="" />
+        <resource identifier="RES_CONTENT_65602779" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Claude-Acceptable-Use-Policy.html" title="" />
+        <resource identifier="RES_CONTENT_65602780" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="sunypoly-acceptable-use-policy.html" title="" />
+        <resource identifier="RES_CONTENT_65602781" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="workbench-sharing-policy.html" title="" />
+        <resource identifier="RES_CONTENT_65602782" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Toolkit-Workbench.html" title="" />
+        <resource identifier="RES_CONTENT_65602783" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Toolkit-Class-Workbench.html" title="" />
+        <resource identifier="RES_CONTENT_65602784" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Toolkit-Exporter-Install.html" title="" />
+        <resource identifier="RES_CONTENT_65602785" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Toolkit-Zotero.html" title="" />
+        <resource identifier="RES_CONTENT_65602786" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Toolkit-Teams.html" title="" />
+        <resource identifier="RES_CONTENT_65733078" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="exporter.html" title="" />
+        <resource identifier="RES_CONTENT_65733783" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="teams.html" title="" />
+        <resource identifier="res_syllabus" type="webcontent" d2l_2p0:material_type="d2lsyllabus" d2l_2p0:link_target="" href="syllabus_d2l.xml" title="" />
+        <resource identifier="res_question_library" type="webcontent" d2l_2p0:material_type="d2lquestionlibrary" d2l_2p0:link_target="" href="questiondb.xml" title="Question Library" />
+        <resource identifier="res_quiz_5719521" type="webcontent" d2l_2p0:material_type="d2lquiz" d2l_2p0:link_target="" href="quiz_d2l_5719521.xml" title="claude" />
+        <resource identifier="res_discuss_1" type="webcontent" d2l_2p0:material_type="d2ldiscussion" d2l_2p0:link_target="" href="discussion_d2l_1.xml" title="" />
+        <resource identifier="res_discuss_2" type="webcontent" d2l_2p0:material_type="d2ldiscussion" d2l_2p0:link_target="" href="discussion_d2l_2.xml" title="" />
+        <resource identifier="res_news" type="webcontent" d2l_2p0:material_type="d2lnews" d2l_2p0:link_target="" href="news_d2l.xml" title="" />
+        <resource identifier="res_dropbox" type="webcontent" d2l_2p0:material_type="d2ldropbox" d2l_2p0:link_target="" href="dropbox_d2l.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_4091613" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_4091613.xml" title="" />
+        <resource identifier="RES_LTI_CONTENT_4311596" type="webcontent" d2l_2p0:material_type="imsbasiclti_xmlv1p0" d2l_2p0:link_target="" href="basic_lti_link_4311596.xml" title="" />
+        <resource identifier="res_courseimage" type="webcontent" d2l_2p0:material_type="d2lcourseimage" d2l_2p0:link_target="" href="courseimage_d2l.xml" title="" />
+    </resources>
+</manifest>
