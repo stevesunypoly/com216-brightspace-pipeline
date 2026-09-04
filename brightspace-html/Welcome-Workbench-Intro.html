@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COM 216 / FYS 111 — Welcome: Your Workbench, and This One</title>
+<style>
+:root {
+  --navy: #1E376C;
+  --gold: #EBAB21;
+  --accent: #FF5A0F;
+  --bg-alt: #EEF1F7;
+  --text: #1A1A1A;
+  --border: #C9D2E3;
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--text); background: #fff; }
+.page { max-width: 44rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; border-top: 4px solid var(--accent); }
+.skip-link { position: absolute; left: -999px; top: auto; background: var(--navy); color: #fff; padding: 0.75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(1.4rem, 1rem + 1.5vw, 1.9rem); margin: 0 0 0.25rem; color: var(--text); }
+p { max-width: 68ch; margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+a { color: var(--navy); text-underline-offset: 0.15em; word-break: break-word; }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+a.ext::after { content: "\2197"; font-size: 0.85em; margin-left: 0.15em; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media print { .page { border-top: none; } .skip-link { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="page">
+<header>
+<h1>Welcome &mdash; Your Workbench, and This One</h1>
+</header>
+<main id="main">
+<p>Every turn you do in this course produces a document, and every document goes into a folder: your <strong>workbench</strong>. It starts nearly empty in week one and it is still growing in week fifteen. Full setup for it is in the Toolkit module &mdash; this is just the idea, before you build it.</p>
+<p>Here is the part that is easy to miss: the course itself is set up the same way. This whole class (the cuboid, the case list, the readings, the turn templates) lives in a folder too, and you can see it here:</p>
+<p><a class="ext" href="https://drive.google.com/drive/folders/1eaoDlmbR3k6QIwenL8WUilrlA-L6ZMLL?usp=sharing">https://drive.google.com/drive/folders/1eaoDlmbR3k6QIwenL8WUilrlA-L6ZMLL?usp=sharing<span class="visually-hidden"> (external site)</span></a></p>
+<p>That folder is not just a place to browse. It is a workbench a model can read. Point an LLM at it, hand it files from that folder or describe what is in it, and the model can reason over the actual material of the course, not a summary of it. Your own workbench works the same way: a folder built to be fed to a model and inferred against, turn after turn.</p>
+<p>Full setup, tool list, and folder structure are in the <strong><a href="Welcome-Toolkit-Overview.html">Toolkit</a></strong> module. Start there before Assignment 1.</p>
+</main>
+</div>
+</body>
+</html>

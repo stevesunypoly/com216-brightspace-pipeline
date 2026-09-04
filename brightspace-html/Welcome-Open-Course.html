@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>This Is an Open Course</title>
+<style>
+:root {
+  --navy: #1E376C;
+  --gold: #EBAB21;
+  --accent: #FF5A0F;
+  --bg-alt: #EEF1F7;
+  --text: #1A1A1A;
+  --border: #C9D2E3;
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--text); background: #fff; }
+.page { max-width: 44rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; border-top: 4px solid var(--accent); }
+.skip-link { position: absolute; left: -999px; top: auto; background: var(--navy); color: #fff; padding: 0.75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(1.4rem, 1rem + 1.5vw, 1.9rem); margin: 0 0 0.25rem; color: var(--text); }
+h2 { font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+.subtitle { color: #454545; margin: 0 0 2rem; max-width: 68ch; }
+p { max-width: 68ch; margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+ul { max-width: 68ch; margin: 0 0 1rem; padding-left: 1.4rem; }
+ul li { margin: 0 0 0.5rem; }
+code { font-family: var(--font-mono); background: var(--bg-alt); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.92em; }
+a { color: var(--navy); text-underline-offset: 0.15em; }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+.note { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px; padding: 0.9rem 1.1rem; font-size: 0.92rem; margin: 1.25rem 0; max-width: 68ch; }
+.note:last-child { margin-bottom: 0; }
+.note strong { color: var(--navy); }
+@media print { .page { border-top: none; } .skip-link { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="page">
+<header>
+<h1>This Is an Open Course</h1>
+</header>
+<main id="main">
+<p>This course uses "open" in a specific sense. Your workbench isn't a private submission that only I read and then file away. Within this class, two things happen to it that wouldn't happen in most courses.</p>
+<p>First, you'll share your workbench zip with your classmates. This isn't a course where you work in isolation and compare notes at the end. Your weekly workbench &mdash; your voxel docs, your reasoning, your justified placements &mdash; becomes something your classmates can see and learn from, the same way you'll see theirs. If you place a case differently than someone else did, that difference is teaching material, not a grading discrepancy to hide.</p>
+<p>Second, the contents of your workbench get ingested by Claude models as part of how this course runs. Your workbench archives &mdash; transcripts, artifacts, observations &mdash; are processed to generate the provocations that open each observation checkpoint (weeks 1, 5, 12, and 16), and more broadly, to gather insight into how this class, as a group, is engaging with the legal and ethical challenges of the information age, and with the model itself as a learning partner. That second part is close to the actual subject of the course. You are, among other things, a participant in an ongoing look at what a room full of people reaching for a language model actually produces.</p>
+<p>Where this stays. All of this &mdash; peer sharing and model processing &mdash; is scoped to this class. Your work is available to your classmates, to me, and to the teaching assistants. It is not made public, and it is not distributed anywhere outside this course.</p>
+<h2>Access requires agreement</h2>
+<p>Getting your Claude account for this course requires signing the course's acceptable-use statement, which includes your agreement to this: that your workbench will be shared with classmates and processed as described above. This isn't a separate form &mdash; it's part of the same document that gets you your account, so read it before you sign it.</p>
+<p>You can opt out. If you don't want your work shared or processed this way, say so, and your work will be excluded from all of it &mdash; no peer sharing, no provocation generation, no inclusion in any course-level overview of the class's engagement. Opting out is a real, respected option. What it costs you is participation in the shared-visibility part of the course: you'll still complete the same assignments, but your classmates won't see your workbench and yours won't be built from theirs.</p>
+<h2>Your Claude account itself</h2>
+<p>Separately from your workbench, your SUNY Poly&ndash;provisioned Claude account is visible to me as the instructor, the same way your activity in Brightspace is &mdash; usage, sessions, and behavior in the account can be tracked, because it's an institutional account issued for this course.</p>
+<p>Two different things follow from that, and they're not the same:</p>
+<ul>
+<li>Your individual-level behavior in the account is protected data. It's not shared with your classmates, and it's treated the way any other individually identifiable education record is treated &mdash; visible to me and to course staff for the purposes of running the course, not published or distributed.</li>
+<li>Aggregate-level patterns about the class as a whole are a different matter. What the class collectively does with the model &mdash; discernible both from account-level Claude data and from the workbench submissions described above &mdash; is exactly the kind of insight this course is also built to generate. An observation about how the class as a group is engaging with the model is not the same disclosure as an observation about you specifically, and the second never happens without your consent under the terms above.</li>
+</ul>
+<h2>Anonymizing your workbench</h2>
+<p>You don't have to submit under your real name. If you'd rather your classmates not know a given workbench is yours, choose a pseudonym and name your zip file after it &mdash; <code>workbench0-fred.zip</code>, say, instead of your own name. From then on, that's the name your work gets discussed under in class: "Fred's Assignment 3" rather than yours.</p>
+<p>One thing to know: instructors and teaching assistants always know who you actually are, regardless of which name is on the zip. The pseudonym protects you from your classmates, not from course staff &mdash; grading, feedback, and any individual conversation about your work still happens with your real identity on our end.</p>
+<p>These terms &mdash; peer sharing, model processing, and the opt-out mechanism &mdash; are the same ones formalized in the <a href="Claude-Acceptable-Use-Policy.html">Claude Account &amp; Acceptable Use Policy</a> that you sign to receive your course Claude account.</p>
+</main>
+</div>
+</body>
+</html>

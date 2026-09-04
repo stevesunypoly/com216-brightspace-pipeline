@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zotero Toolkit — COM 216 / FYS 111</title>
+<style>
+:root {
+  --navy: #1E376C;
+  --accent: #FF5A0F;
+  --bg-alt: #EEF1F7;
+  --text: #1A1A1A;
+  --border: #C9D2E3;
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--text); background: #fff; }
+.page { max-width: 44rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; border-top: 4px solid var(--accent); }
+.skip-link { position: absolute; left: -999px; top: auto; background: var(--navy); color: #fff; padding: 0.75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(1.4rem, 1rem + 1.5vw, 1.9rem); margin: 0 0 0.25rem; color: var(--text); }
+h2 { font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+.subtitle { color: #454545; margin: 0 0 2rem; max-width: 68ch; }
+a { color: var(--navy); }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+code, .path { font-family: var(--font-mono); background: #f2f2f2; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.9em; word-break: break-all; }
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; margin-top: 0.5rem; }
+caption.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+th, td { text-align: left; padding: 0.6rem 0.75rem; border: 1px solid var(--border); vertical-align: top; font-size: 0.95rem; }
+thead th { background: var(--bg-alt); color: var(--navy); font-weight: 700; }
+ol li, ul li { margin-bottom: 0.5rem; }
+.bib { font-family: var(--font-mono); background: #f7f7f7; border: 1px solid var(--border); border-radius: 6px; padding: 1rem 1.25rem; font-size: 0.85rem; white-space: pre-wrap; overflow-x: auto; }
+.note { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px; padding: 0.9rem 1.1rem; font-size: 0.92rem; margin: 1rem 0; }
+.fill { color: #b3390c; font-weight: 600; }
+a.ext::after { content: "\2197"; font-size: 0.85em; margin-left: 0.15em; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media print { .page { border-top: none; } .skip-link { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="page">
+<header>
+<h1>Zotero Toolkit</h1>
+<p class="subtitle">Installing Zotero, building the first library, and proving the sync works — for the <code>zotero/</code> folder of the Workbench.</p>
+</header>
+<main id="main">
+<div class="note">This is a walkthrough to follow yourself: Zotero is desktop software and a browser extension, and installing or running either happens on your own machine, not inside this document. Follow the steps below, then fill in the two timestamps at the bottom as your proof.</div>
+
+<h2>1. Download</h2>
+<div class="table-scroll">
+<table>
+<caption class="visually-hidden">Zotero components and where to get them</caption>
+<thead><tr><th scope="col">Component</th><th scope="col">Where</th></tr></thead>
+<tbody>
+<tr><td>Zotero desktop app</td><td><a class="ext" href="https://www.zotero.org/download/">zotero.org/download<span class="visually-hidden"> (external site)</span></a> — choose the build for your OS (Windows, macOS, or Linux) and install it normally.</td></tr>
+<tr><td>Zotero Connector (browser extension)</td><td>Offered on the same download page, or install directly from your browser's extension store (Chrome Web Store, Firefox Add-ons, or Edge Add-ons — search "Zotero Connector"). It adds a save button to the toolbar that saves whatever page you're on directly into Zotero.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>2. Installation</h2>
+<ol>
+<li>Run the Zotero installer and open the app once to let it finish setup.</li>
+<li>Install the Zotero Connector in whichever browser you use for research.</li>
+<li>In Zotero, go to <strong>Edit &rarr; Preferences &rarr; Advanced</strong> and note the data directory — this is the local Zotero database, separate from any export you'll place in the Workbench.</li>
+<li>In <strong>Preferences &rarr; General &rarr; File Handling</strong>, tick <strong>Automatically attach associated PDFs and other files when saving items</strong>. This makes the Connector pull down a PDF of the page (when one is available) at the same moment it saves the citation.</li>
+<li>Optional but recommended: create a free account at <a class="ext" href="https://www.zotero.org/user/register">zotero.org/user/register<span class="visually-hidden"> (external site)</span></a> and sign in under <strong>Preferences &rarr; Sync</strong> so the library backs up online, not just locally.</li>
+</ol>
+
+<h2>3. Create your first library and save an entry</h2>
+<ol>
+<li>Open Zotero. The default library ("My Library") is created automatically — this is your first library.</li>
+<li>Visit the first source with the Connector installed:<br><a class="ext" href="https://levysoft.medium.com/exotic-mind-like-entities-a-new-vocabulary-for-artificial-intelligence-be1511915cb9">Exotic Mind-like Entities: A New Vocabulary for Artificial Intelligence<span class="visually-hidden"> (external site)</span></a> — Antonio Troise, Medium, May 6, 2025.</li>
+<li>Click the Connector icon in the browser toolbar to save the page into the library. Zotero will pick up the title, author, and date automatically, and — with the file-handling preference above enabled — attach a PDF snapshot of the page as a child item underneath it.</li>
+<li>Click the disclosure triangle next to the new entry in Zotero's middle pane and confirm a PDF attachment is listed underneath it. If none appears (some pages don't offer a direct PDF), open the item and use <strong>right-click &rarr; Add Attachment &rarr; Attach Link/File to Snapshot</strong> to attach one manually.</li>
+<li><strong>Export the library</strong>: right-click the library in Zotero &rarr; <strong>Export Library&hellip;</strong> &rarr; choose a format (BibTeX or CSL JSON both work well for a growing library). In the export dialog, tick <strong>Export Notes</strong> so any notes attached to items are included, and tick <strong>Keep Updated</strong> — this turns the export into a live file that Zotero automatically rewrites whenever the library changes, instead of a one-time snapshot. Save it into the <code>zotero/</code> subfolder of the Workbench.</li>
+<li><strong>Note the timestamp</strong> on that exported file (its "date modified," visible in Finder/Explorer or via <code>ls -l</code>). Record it below — this is proof-of-state #1.</li>
+</ol>
+
+<h2>4. Add a second entry and confirm it updates itself</h2>
+<ol>
+<li>Visit the second source:<br><a class="ext" href="https://dl.acm.org/doi/pdf/10.1145/3624724">Talking about Large Language Models<span class="visually-hidden"> (external site)</span></a> — Murray Shanahan, <em>Communications of the ACM</em>, Vol. 67, No. 2, pp. 68&ndash;79, Jan 25, 2024 (DOI: 10.1145/3624724).</li>
+<li>Save it into the same library with the Connector, the same way as the first entry, and again confirm a PDF attachment appears underneath it. The ACM Digital Library page may be paywalled depending on your access — if the Connector can't fetch the PDF automatically, download it yourself while logged into your institution's ACM access and attach it to the item the same way as above.</li>
+<li>With <strong>Keep Updated</strong> ticked, Zotero rewrites the exported file in <code>zotero/</code> on its own within a few seconds — no manual re-export needed.</li>
+<li>Check the file's timestamp again. If it moved forward from step 3, that's the proof: the library changed, and the live export in the Workbench picked it up automatically.</li>
+</ol>
+
+<h2>Proof-of-state log</h2>
+<div class="table-scroll">
+<table>
+<caption class="visually-hidden">Proof-of-state log for the two Zotero exports</caption>
+<thead><tr><th scope="col">Step</th><th scope="col">Library contents</th><th scope="col">PDF attached?</th><th scope="col">Exported file timestamp</th></tr></thead>
+<tbody>
+<tr><td>1st export</td><td>1 entry — Troise (2025)</td><td class="fill">[[ Y/N ]]</td><td class="fill">[[ fill in ]]</td></tr>
+<tr><td>2nd export</td><td>2 entries — Troise (2025), Shanahan (2024)</td><td class="fill">[[ Y/N ]]</td><td class="fill">[[ fill in ]]</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Reference: what the export should contain</h2>
+<p>A BibTeX export with both entries looks roughly like this:</p>
+<div class="bib">@misc{troise2025exotic,
+  author = {Troise, Antonio},
+  title  = {Exotic Mind-like Entities: A New Vocabulary for Artificial Intelligence},
+  year   = {2025},
+  month  = {5},
+  url    = {https://levysoft.medium.com/exotic-mind-like-entities-a-new-vocabulary-for-artificial-intelligence-be1511915cb9},
+  note   = {Medium}
+}
+
+@article{shanahan2024talking,
+  author  = {Shanahan, Murray},
+  title   = {Talking about Large Language Models},
+  journal = {Communications of the ACM},
+  volume  = {67},
+  number  = {2},
+  pages   = {68--79},
+  year    = {2024},
+  doi     = {10.1145/3624724},
+  url     = {https://dl.acm.org/doi/10.1145/3624724}
+}</div>
+
+<h2>Where it lives</h2>
+<p>Per the Workbench layout, the exported file (e.g. <code>library.bib</code>) sits in <code>Workbench/zotero/</code> alongside any other Zotero exports, and gets swept up automatically each week when the whole Workbench folder is zipped for Brightspace.</p>
+</main>
+</div>
+</body>
+</html>

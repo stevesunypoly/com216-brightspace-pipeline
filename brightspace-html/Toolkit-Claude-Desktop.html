@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Desktop — COM 216 / FYS 111 Toolkit</title>
+<style>
+:root {
+  --navy: #1E376C;
+  --accent: #FF5A0F;
+  --bg-alt: #EEF1F7;
+  --text: #1A1A1A;
+  --border: #C9D2E3;
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--text); background: #fff; }
+.page { max-width: 44rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; border-top: 4px solid var(--accent); }
+.skip-link { position: absolute; left: -999px; top: auto; background: var(--navy); color: #fff; padding: 0.75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(1.4rem, 1rem + 1.5vw, 1.9rem); margin: 0 0 0.25rem; color: var(--text); }
+h2 { font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+.subtitle { color: #454545; margin: 0 0 2rem; max-width: 68ch; }
+a { color: var(--navy); }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+ol li, ul li { margin-bottom: 0.5rem; }
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; margin-top: 0.5rem; }
+caption.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+th, td { text-align: left; padding: 0.6rem 0.75rem; border: 1px solid var(--border); vertical-align: top; font-size: 0.95rem; }
+thead th { background: var(--bg-alt); color: var(--navy); font-weight: 700; }
+.note { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px; padding: 0.9rem 1.1rem; font-size: 0.92rem; margin: 1rem 0; }
+a.ext::after { content: "\2197"; font-size: 0.85em; margin-left: 0.15em; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media print { .page { border-top: none; } .skip-link { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="page">
+<header>
+<h1>Claude Desktop</h1>
+<p class="subtitle">The app that runs Cowork mode — used for the Workbench, Zotero, and exporter work in this toolkit.</p>
+</header>
+<main id="main">
+<h2>Download</h2>
+<div class="table-scroll">
+<table>
+<caption class="visually-hidden">Claude Desktop download links by platform</caption>
+<thead><tr><th scope="col">Platform</th><th scope="col">Download</th></tr></thead>
+<tbody>
+<tr><td>macOS</td><td><a class="ext" href="https://claude.ai/api/desktop/darwin/universal/dmg/latest/redirect">Download for macOS<span class="visually-hidden"> (external site)</span></a></td></tr>
+<tr><td>Windows</td><td><a class="ext" href="https://claude.ai/api/desktop/win32/x64/setup/latest/redirect">Download for Windows<span class="visually-hidden"> (external site)</span></a></td></tr>
+<tr><td>Windows (ARM64)</td><td><a class="ext" href="https://claude.ai/api/desktop/win32/arm64/setup/latest/redirect">Download for Windows ARM64<span class="visually-hidden"> (external site)</span></a></td></tr>
+<tr><td>Linux (beta)</td><td>Ubuntu/Debian only — see <a class="ext" href="https://code.claude.com/docs/en/desktop-linux">docs<span class="visually-hidden"> (external site)</span></a></td></tr>
+</tbody>
+</table>
+</div>
+<p>Or start from <a class="ext" href="https://claude.com/download">claude.com/download<span class="visually-hidden"> (external site)</span></a>, which detects your OS automatically.</p>
+<h2>Setup</h2>
+<ol>
+<li>Run the installer for your OS.</li>
+<li>Sign in with the same Claude account used everywhere else — conversations, projects, and memory sync across desktop, web, and mobile once signed in.</li>
+</ol>
+<div class="note">Cowork mode requires the desktop app running on a computer that isn't asleep — it can't complete tasks while your machine is off or sleeping.</div>
+</main>
+</div>
+</body>
+</html>

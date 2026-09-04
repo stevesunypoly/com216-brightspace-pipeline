@@ -10,16 +10,20 @@ module: Toolkit
 order: 100
 purpose: "Guide to using Microsoft Teams for course communication."
 source-html: "Toolkit-Teams.html"
-version: v1
-version-date: 2026-09-03
+version: v2
+version-date: 2026-09-04
 status: published
-note: "Reverse-derived from the live Brightspace export (D2LExport_2939842_2026FA-UTI-COM216-1594_20269346.zip, 2026-09-03) per pipeline \u00a76."
+note: "v1: reverse-derived from the live Brightspace export (D2LExport_2939842_2026FA-UTI-COM216-1594_20269346.zip, 2026-09-03) per pipeline \u00a76. v2: folded in the direct channel quick-link from the standalone teams.md stub (archived) rather than keeping it as a separate topic."
 ---
 
 ## Join the team
 
 [General | COM216/FYS111<span class="visually-hidden"> (external
 site)</span>](https://teams.microsoft.com/l/team/19%3ACfvJidMPJl8UiJ4nWf5yl_M0oAxhcXNgQtV0Hmpk33E1%40thread.tacv2/conversations?groupId=de65ffcf-02da-4672-ab94-3a4519529c0d&tenantId=10f26886-047b-43d2-be51-eedfa06ccc32)
+
+**Already a member?** Jump straight to the channel:
+[General | COM216<span class="visually-hidden"> (external
+site)</span>](https://teams.microsoft.com/l/channel/19%3AHc0uvKyLA2Qkoaj6KwfKXjbLUPde2aSKbUF-dz13RO41%40thread.tacv2/General?groupId=fb8526a2-2e31-49af-a590-7677a144ce4a&tenantId=10f26886-047b-43d2-be51-eedfa06ccc32)
 
 <div class="note">
 

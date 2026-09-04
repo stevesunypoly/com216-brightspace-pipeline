@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toolkit</title>
+<style>
+:root {
+  --navy: #1E376C;
+  --gold: #EBAB21;
+  --accent: #FF5A0F;
+  --bg-alt: #EEF1F7;
+  --text: #1A1A1A;
+  --border: #C9D2E3;
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--text); background: #fff; }
+.page { max-width: 44rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; border-top: 4px solid var(--accent); }
+.skip-link { position: absolute; left: -999px; top: auto; background: var(--navy); color: #fff; padding: 0.75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(1.4rem, 1rem + 1.5vw, 1.9rem); margin: 0 0 0.25rem; color: var(--text); }
+h2 { font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+.subtitle { color: #454545; margin: 0 0 2rem; max-width: 68ch; }
+p { max-width: 68ch; margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+a { color: var(--navy); text-underline-offset: 0.15em; }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+@media print { .page { border-top: none; } .skip-link { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="page">
+<header>
+<h1>Toolkit</h1>
+</header>
+<main id="main">
+<p>This class relies on students having access to a specific set of tools in order to fully participate in the class. We have resources to provide support should you find this challenging.</p>
+<p>The class assumes you run the <a href="Toolkit-Chrome.html">Chrome browser</a>, which is officially the only browser SUNY Poly supports. (I believe all of our tools work with Edge, but may not with Firefox or Safari.)</p>
+<p>We ask that you install a <a href="Toolkit-Exporter-Install.html">Chrome browser extension</a> that will allow you to capture archives of your LLM conversations.</p>
+<p>We ask that you install <a href="Toolkit-Zotero.html">Zotero</a>, a bibliographic management system, and its companion Chrome browser extension, which will allow you to identify, capture, and ingest bibliographic sources.</p>
+<p>Finally, we ask that you download the <a href="Toolkit-Claude-Desktop.html">Claude Desktop</a> application for use during the class.</p>
+<p>Install steps for each of these live in the Toolkit module. See also: <a href="Toolkit-Teams.html">Microsoft Teams</a>, your <a href="Toolkit-Workbench.html">workbench</a>, the <a href="Toolkit-Class-Workbench.html">Class Workbench</a>, and the <a href="Claude-Acceptable-Use-Policy.html">Claude Account &amp; Acceptable Use Policy</a>.</p>
+</main>
+</div>
+</body>
+</html>

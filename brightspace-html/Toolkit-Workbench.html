@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Workbench — COM 216 / FYS 111 Toolkit</title>
+<style>
+:root {
+  --navy: #1E376C;
+  --accent: #FF5A0F;
+  --bg-alt: #EEF1F7;
+  --text: #1A1A1A;
+  --border: #C9D2E3;
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--text); background: #fff; }
+.page { max-width: 44rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; border-top: 4px solid var(--accent); }
+.skip-link { position: absolute; left: -999px; top: auto; background: var(--navy); color: #fff; padding: 0.75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(1.4rem, 1rem + 1.5vw, 1.9rem); margin: 0 0 0.25rem; color: var(--text); }
+h2 { font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+.subtitle { color: #454545; margin: 0 0 2rem; max-width: 68ch; }
+a { color: var(--navy); }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+p { max-width: 68ch; }
+code, .path { font-family: var(--font-mono); background: #f2f2f2; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+.tree { font-family: var(--font-mono); background: #f7f7f7; border: 1px solid var(--border); border-radius: 6px; padding: 1rem 1.5rem; font-size: 0.9rem; white-space: pre; overflow-x: auto; }
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; margin-top: 0.5rem; }
+caption.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+th, td { text-align: left; padding: 0.6rem 0.75rem; border: 1px solid var(--border); vertical-align: top; font-size: 0.95rem; }
+thead th { background: var(--bg-alt); color: var(--navy); font-weight: 700; }
+ol li, ul li { margin-bottom: 0.4rem; }
+@media print { .page { border-top: none; } .skip-link { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="page">
+<header>
+<h1>The Workbench</h1>
+<p class="subtitle">A single working directory for the course — synced to Google Drive, SharePoint, or an external hard drive.</p>
+</header>
+<main id="main">
+<h2>What it is</h2>
+<p>The Workbench is one top-level folder, kept in whatever storage location is convenient — a Google Drive folder, a SharePoint document library, or a local/external drive. Everything produced for the course lives inside it, organized into four subdirectories. Nothing outside the Workbench counts toward the weekly submission.</p>
+<div class="tree">Workbench/
+├── transcripts/
+├── artifacts/
+├── observations/
+└── zotero/</div>
+<h2>Subdirectories</h2>
+<div class="table-scroll">
+<table>
+<caption class="visually-hidden">Workbench subdirectories and their contents</caption>
+<thead><tr><th scope="col">Folder</th><th scope="col">Contents</th></tr></thead>
+<tbody>
+<tr><td><code>transcripts/</code></td><td>Raw session transcripts or conversation exports — the unedited record of the work as it happened, including full model-session archives called for by an observation checkpoint.</td></tr>
+<tr><td><code>artifacts/</code></td><td>Finished outputs: documents, code, diagrams, slides, or anything else produced as a deliverable.</td></tr>
+<tr><td><code>observations/</code></td><td>Your own unaided writing from each observation checkpoint (weeks 1, 5, 12, and finals week) — captured before you bring a model in, kept exactly as written.</td></tr>
+<tr><td><code>zotero/</code></td><td>Citation library and source material exported from Zotero (or the corresponding <code>.bib</code>/export files).</td></tr>
+</tbody>
+</table>
+</div>
+<h2>Weekly submission</h2>
+<p>Each week, the entire Workbench — all four folders and everything in them — is compressed into a single zip archive and uploaded to Brightspace as that week's assignment. The zip should preserve the folder structure above, so anyone opening it sees the same four directories at the top level.</p>
+<ol>
+<li>Confirm each of the four folders is up to date for the week.</li>
+<li>Select the <code>Workbench</code> folder itself (not its individual contents) and compress it to a single <code>.zip</code> file.</li>
+<li>Name the archive clearly, e.g. <code>Workbench_Week03.zip</code>.</li>
+<li>Upload the zip to the corresponding Brightspace assignment dropbox.</li>
+</ol>
+<h2>Notes</h2>
+<p>Whichever storage location is used, the folder names and structure should stay identical week to week — this keeps the zip contents predictable and makes past weeks easy to compare. Zip compression is native on macOS, Windows, and most Drive/SharePoint desktop clients, so no extra software is needed.</p>
+</main>
+</div>
+</body>
+</html>

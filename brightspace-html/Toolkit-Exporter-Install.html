@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Interaction Exporter — Install</title>
+<style>
+:root {
+  --navy: #1E376C;
+  --accent: #FF5A0F;
+  --bg-alt: #EEF1F7;
+  --text: #1A1A1A;
+  --border: #C9D2E3;
+  --warn-bg: #fdecea;
+  --warn-border: #f3c2bd;
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--text); background: #fff; }
+.page { max-width: 44rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; border-top: 4px solid var(--accent); }
+.skip-link { position: absolute; left: -999px; top: auto; background: var(--navy); color: #fff; padding: 0.75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(1.4rem, 1rem + 1.5vw, 1.9rem); margin: 0 0 0.25rem; color: var(--text); }
+h2 { font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+.subtitle { color: #454545; margin: 0 0 2rem; max-width: 68ch; }
+a { color: var(--navy); }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+code, .path { font-family: var(--font-mono); background: #f2f2f2; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.9em; word-break: break-all; }
+ol li, ul li { margin-bottom: 0.5rem; }
+.note { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px; padding: 0.9rem 1.1rem; font-size: 0.92rem; margin: 1rem 0; }
+.warn { background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: 6px; padding: 0.9rem 1.1rem; font-size: 0.92rem; margin: 1rem 0; }
+a.ext::after { content: "\2197"; font-size: 0.85em; margin-left: 0.15em; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media print { .page { border-top: none; } .skip-link { display: none; } }
+</style>
+</head><body><p><a class="skip-link" href="#main">Skip to main content</a></p>
+<div class="page"><header>
+<h1>Installing the Claude Interaction Exporter</h1>
+<p class="subtitle">A Chrome extension that saves your own Claude.ai conversations and Cowork sessions to files on your computer. Loaded from source, since it isn't published on the Chrome Web Store.</p>
+<p class="subtitle"><a href="https://github.com/StrivenWord/Claude-Interaction-Exporter">https://github.com/StrivenWord/Claude-Interaction-Exporter</a></p>
+</header><main id="main">
+<div class="note">Repository: <a class="ext" href="https://github.com/StrivenWord/Claude-Interaction-Exporter">github.com/StrivenWord/Claude-Interaction-Exporter<span class="visually-hidden"> (external site)</span></a>. It has no backend — it calls the same Claude.ai API the site itself uses and writes files straight to your computer. No account, no analytics, no third-party server.</div>
+<h2>1. Download the code</h2>
+<ol>
+<li>Open the repository page: <a class="ext" href="https://github.com/StrivenWord/Claude-Interaction-Exporter">github.com/StrivenWord/Claude-Interaction-Exporter<span class="visually-hidden"> (external site)</span></a>.</li>
+<li>Click the green <strong>Code</strong> button → <strong>Download ZIP</strong>.</li>
+<li>Unzip it somewhere you won't move or delete — Chrome loads the extension directly from this folder, not a copy of it. It should contain <code>manifest.json</code> at the top level.</li>
+</ol>
+<h2>2. Turn on Developer mode in Chrome</h2>
+<ol>
+<li>Go to <code>chrome://extensions/</code> (paste directly into the address bar).</li>
+<li>Flip the <strong>Developer mode</strong> toggle in the top-right corner. This unlocks the buttons needed to load an extension that isn't from the Web Store.</li>
+</ol>
+<h2>3. Load it as an unpacked extension</h2>
+<ol>
+<li>With Developer mode on, click <strong>Load unpacked</strong> (top-left of the extensions page).</li>
+<li>Select the unzipped folder — the one containing <code>manifest.json</code> — and confirm.</li>
+<li>The extension appears in the list and in the toolbar. Click the puzzle-piece icon and pin it for easy access.</li>
+</ol>
+<h2>4. Connect it to your Claude account</h2>
+<p>One-time setup so the extension knows which organization's conversations to read:</p>
+<ol>
+<li>Sign in to <a class="ext" href="https://claude.ai">claude.ai<span class="visually-hidden"> (external site)</span></a>.</li>
+<li>In a new tab, open <code>https://claude.ai/api/organizations</code> — this returns raw JSON, which is expected.</li>
+<li>Find the value after <code>"uuid":</code> (a string like <code>1a2b3c4d-5e6f-7890-abcd-ef1234567890</code>) and copy it, without the quotation marks.</li>
+<li>Right-click the extension's toolbar icon → <strong>Options</strong>.</li>
+<li>Paste the ID into <strong>Organization ID</strong>, click <strong>Save Settings</strong>, then <strong>Test Connection</strong> — it should report how many conversations it found.</li>
+</ol>
+<h2>5. Use it</h2>
+<ul>
+<li><strong>Single export</strong>: open a conversation or Cowork session, click the extension icon, pick a format (Markdown, plain text, or JSON), and click Export.</li>
+<li><strong>Bulk export</strong>: click the icon → <strong>Browse All Conversations</strong> to search, filter, select rows, and export several at once as a ZIP.</li>
+</ul>
+<h2>Keeping it updated</h2>
+<p>Since it's loaded from a folder rather than the Web Store, updates aren't automatic. To update: download the latest ZIP from the repository, replace the folder's contents, then go to <code>chrome://extensions/</code> and click the reload icon on the extension's card.</p>
+<div class="warn">Chrome will label this "unpacked" and may warn about extensions not from the Web Store — expected for anything loaded this way, not a sign of a problem specific to this extension. Only load unpacked extensions from a source you trust; the code has full read/write access to your data on <code>claude.ai</code> while active.</div>
+</main></div></body></html>
