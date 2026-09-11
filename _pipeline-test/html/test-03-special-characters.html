@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test 3: Ampersand &amp; Em-Dash — Special Characters — COM 216 Pipeline Test</title>
+<style>
+:root {
+  --navy: #1E376C;
+  --accent: #FF5A0F;
+  --bg-alt: #EEF1F7;
+  --text: #1A1A1A;
+  --border: #C9D2E3;
+  --font-heading: Georgia, "Times New Roman", Times, serif;
+  --font-body: Arial, Helvetica, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6; color: var(--text); background: #fff; }
+.page { max-width: 44rem; margin: 0 auto; padding: 2rem 1.5rem 3rem; border-top: 4px solid var(--accent); }
+.skip-link { position: absolute; left: -999px; top: auto; background: var(--navy); color: #fff; padding: 0.75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+h1 { font-family: var(--font-heading); font-size: clamp(1.4rem, 1rem + 1.5vw, 1.9rem); margin: 0 0 0.25rem; color: var(--text); }
+h2 { font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 2rem 0 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+.subtitle { color: #454545; margin: 0 0 2rem; max-width: 68ch; }
+a { color: var(--navy); }
+a:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+ol li, ul li { margin-bottom: 0.5rem; }
+.note { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px; padding: 0.9rem 1.1rem; font-size: 0.92rem; margin: 1rem 0; }
+a.ext::after { content: "\2197"; font-size: 0.85em; margin-left: 0.15em; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media print { .page { border-top: none; } .skip-link { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="page">
+<header>
+<h1>Test 3: Ampersand &amp; Em-Dash — Special Characters</h1>
+<p class="subtitle">Verifies that a topic title containing an ampersand and an em-dash survives XML escaping and D2L import unmangled.</p>
+</header>
+<main id="main">
+<h2 id="what-to-check">What to check</h2><p>The topic title in the Brightspace content list should read exactly “Test 3: Ampersand &amp; Em-Dash — Special Characters”.</p><ol type="1"><li>The ampersand shows as a single ampersand character, not as an escaped entity and not stripped to a space.</li><li>The em-dash shows as a long dash, not as a question mark, mojibake, or a plain hyphen.</li><li>The same two characters render correctly here in the page body: Ampersand &amp; Em-Dash — like this.</li></ol><div class="note"><p>Mangling here points at either XML escaping in the manifest or a character-encoding mismatch on import, and the two look different: an escaping bug shows a literal entity as visible text, an encoding bug shows mojibake.</p></div>
+</main>
+</div>
+</body>
+</html>
